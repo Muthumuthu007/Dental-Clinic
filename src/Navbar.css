@@ -1,0 +1,116 @@
+/* Navbar container styles */
+.navbar {
+  padding: 5px 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+  background-color: #AEC7C9;
+}
+
+/* Navbar container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+
+/* Logo styles */
+.navbar-logo {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo-Image {
+  margin-top: 15px;
+  max-height: 40px; /* Smaller logo */
+  max-width: 40px; /* Proportional scaling */
+  margin-right: 0px; /* Reduced spacing between logo and text */
+  display: inline;
+}
+
+/* Menu styles */
+.navbar-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-item {
+  margin-right: 20px;
+}
+
+.navbar-link {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.4s ease;
+}
+
+.navbar-link:hover {
+  color: #007BFF;
+  cursor: pointer;
+}
+
+/* Active menu item */
+.active {
+  font-weight: bold;
+  border-bottom: 2px solid #007BFF;
+}
+
+/* Default state: hide hamburger icon */
+.hamburger {
+  display: none; /* Hide hamburger by default */
+}
+
+.header h1 {
+  font-size: 1.5rem; /* Adjust as needed for readability */
+  color: #003366;
+  white-space: nowrap; /* Prevent text from wrapping onto a new line */
+  overflow: hidden; /* Hide any extra content */
+  text-overflow: ellipsis; /* Add ellipsis if content exceeds the available space */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .navbar-menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: none; /* Hide menu by default */
+  }
+
+  .navbar-menu.open {
+    display: flex; /* Show menu when open */
+  }
+
+  .navbar-item {
+    margin: 10px 0;
+  }
+
+  .navbar-link {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Hamburger menu styles for small screens */
+  .hamburger {
+    display: block; /* Show hamburger on small screens */
+    background: none;
+    color: black;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px; /* Adjust for alignment */
+  }
+
+  /* Responsive styles for navbar title */
+  .navbar-logo {
+    font-size: 18px; /* Smaller font size for smaller screens */
+  }
+}

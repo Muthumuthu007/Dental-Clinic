@@ -1,0 +1,156 @@
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px 0;
+}
+
+
+.slider-button {
+  background: #003366;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+
+.slider-button:hover {
+  background: #0055aa;
+}
+
+.slider-button.left {
+  position: unset;
+  left: -50px;
+}
+
+.slider-button.right {
+  position: unset;
+  right: -50px;
+}
+
+.review-card {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 90%; /* Adjust for mobile responsiveness */
+  max-width: 500px;
+  text-align: left;
+  height: 250px;
+}
+
+.review-card h3 {
+  font-size: 1.2rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.review-card .stars {
+  color: #ffcc00;
+  margin-bottom: 15px;
+}
+
+.review-card .feedback {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .slider {
+    flex-direction: column;
+  }
+
+  .slider-button.left,
+  .slider-button.right {
+    position: static;
+    margin: 10px;
+  }
+
+  .review-card {
+    width: 100%;
+  }
+}
+
+.review-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.review-card {
+  flex: 0 0 80%; /* Adjust width for mobile view */
+  max-width: 600px;
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+.rate-us{
+  width: 200px;
+  height: 40px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #003366, #0055aa);
+  color: white;
+
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(135deg, #003366, #0055aa);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.slider-button:hover {
+  background: linear-gradient(135deg, #0055aa, #003366);
+ 
+}
+
+.slider-button.left {
+  left: 20px;
+}
+
+.slider-button.right {
+  right: 20px;
+}
+
+/* Hide buttons on mobile view */
+@media (max-width: 768px) {
+  .slider-button.left {
+    /* left: 20px; */
+    width: 50px;
+    height: 50px;
+  }
+
+  .slider-button.right {
+    /* right: 20px; */
+    width: 50px;
+    height: 50px;
+  }
+}

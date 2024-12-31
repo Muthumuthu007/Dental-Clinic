@@ -1,0 +1,367 @@
+/* Sections.css */
+
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+
+/* Your existing styles */
+
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+
+
+
+
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* .service-title{
+  font-size: 20px;
+} */
+
+/* Keyframe animation for hero section */
+@keyframes pro2__animate {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+/* Hero section styling */
+.hero {
+  margin-top: 0;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  background-color: grey;
+  object-fit: cover;
+  overflow: hidden;
+  animation: pro2__animate 5s infinite ease-in-out;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Wrapper for text content */
+.text-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+.frame {
+  width: 90%;
+  max-width: 1250px;
+  height: auto;
+  background-color: rgba(255, 252, 252, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Styling for large headings */
+.text-wrapper h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* Paragraph text */
+.text-wrapper p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+/* Buttons Alignment */
+.button-wrapper {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Call-to-action button */
+.cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: rgb(138, 134, 134);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cta-button:hover {
+  background-color: rgb(56, 46, 46);
+  cursor: pointer;
+}
+
+
+.cta-button i {
+  font-size: 1.2rem; /* Adjust icon size */
+  margin-right: 10px; /* Consistent spacing for all icons */
+}
+
+
+.fas.fa-phone-alt {
+  transform: rotate(90deg); /* Rotates the icon 90 degrees to face right */
+  margin-left: 10px; /* Optional spacing between icon and text */
+}
+
+
+@media (max-width: 576px) {
+  .button-wrapper {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Adjust gap for smaller screens */
+  }
+}
+
+/* Service Section */
+.service-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.frame1 {
+  width: 95%;
+  max-width: 1250px;
+  height: auto;
+  background-color: rgba(255, 252, 252, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.sc {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Container for Service Boxes */
+.service-section .box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.about-text {
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Individual Service Box Style */
+.one {
+  width: 210px;
+  height: 300px;
+  /* background: rgb(90,164,235);
+background: linear-gradient(90deg, rgba(90,164,235,1) 0%, rgba(197,210,218,1) 47%, rgba(37,126,231,1) 100%, rgba(245,245,245,1) 100%); */
+  /* background-color: #EFB9B9; */
+  /* background: rgb(208,155,58);
+background: linear-gradient(90deg, rgba(208,155,58,1) 0%, rgba(218,211,197,1) 35%, rgba(231,176,37,1) 88%, rgba(245,245,245,1) 100%); */
+/* background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); */
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.one:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+/* Responsive adjustments for service section */
+@media (max-width: 1200px) {
+  .one {
+    width: calc((100% / 3) - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .one {
+    width: calc((100% / 2) - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .one {
+    width: 100%;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    width: 100%;
+    margin-left: -20px;
+  }
+
+  .text-wrapper h1 {
+    font-size: 2rem;
+  }
+
+  .text-wrapper p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .service-section {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    max-width: 100%;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .service-section {
+    margin-top: 50px;
+  }
+}
+
+/* About Section */
+.section {
+  width: 90%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.about-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+
+.about-text {
+  text-align:start;
+}
+
+.ab {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .about-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-image img {
+    max-width: 100%;
+  }
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Prevents content overflow issues */
+}
+
+/* Static Text Section Styling */
+.static-text-below {
+  padding: 10px;
+  text-align: center;
+
+}
+
+.static-text-below p {
+  text-align:start;
+  margin-left: 900;
+  max-width: 90%;
+  font-weight: 400; 
+}
+ 
+/* Video Section Styling */
+.video-below {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.clinic-video {
+  width: 100%; /* Full width of its container */
+  max-width: 800px; /* Limits video size on larger screens */
+  height: auto;
+  border-radius: 25px; /* Maintains aspect ratio */
+}
+
+/* Ensure Responsiveness for Small Screens */
+@media (max-width: 600px) {
+  .static-text-below p {
+    margin-left: 0; 
+    text-align: center; 
+    max-width: 95%;
+  }
+
+  .clinic-video {
+    width: 95%; /* Makes video slightly smaller on tiny screens */
+  }
+}
+

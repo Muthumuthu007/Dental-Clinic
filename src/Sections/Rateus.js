@@ -86,7 +86,7 @@ function Rateus() {
 
         <button className="rate-us" onClick={() => {
           window.location.href =
-            'https://www.google.com/search?q=Dr.+Sreekanth+dental+clinic+reviews#reviews';
+            'https://www.google.com/search?q=dr+sreekanth+dental+reviews+page&sca_esv=865b4cce462433eb&rlz=1C5CHFA_enIN1074IN1074&sxsrf=ADLYWILbxyeYYY1m3xC1bpWuIoi2uNO0DQ%3A1735641186734&ei=YshzZ4jELKSb4-EPkbO_-AY&ved=0ahUKEwiI_ZGj59GKAxWkzTgGHZHZD28Q4dUDCBE&uact=5&oq=dr+sreekanth+dental+reviews+page&gs_lp=Egxnd3Mtd2l6LXNlcnAiIGRyIHNyZWVrYW50aCBkZW50YWwgcmV2aWV3cyBwYWdlMggQIRigARjDBDIIECEYoAEYwwQyCBAhGKABGMMEMggQIRigARjDBEiYLVCICljNKnABeAGQAQGYAZkDoAHBE6oBCTAuNS40LjEuMbgBA8gBAPgBAZgCCKACnArCAgoQABiwAxjWBBhHwgIIEAAYgAQYogTCAgoQIRigARjDBBgKmAMAiAYBkAYIkgcFMS41LjKgB8pD&sclient=gws-wiz-serp&lqi=CiBkciBzcmVla2FudGggZGVudGFsIHJldmlld3MgcGFnZSICOAFIvva9sfOVgIAIWiEQABABEAIYABgBGAIiE2RyIHNyZWVrYW50aCBkZW50YWySARBjb3NtZXRpY19kZW50aXN0qgFVEAEqFyITZHIgc3JlZWthbnRoIGRlbnRhbCgAMh8QASIb9FOUiko-z42Ile1mQptBowUhicYxJDzNjRMLMhcQAiITZHIgc3JlZWthbnRoIGRlbnRhbA#lrd=0x3a5267d67b89d8af:0xb0150d32f8a6a44b,3,,,,&rlimm=12688062037757437003';
         }}>
           Rate us
         </button>
